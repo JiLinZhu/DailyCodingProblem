@@ -8,3 +8,4 @@ Exactly what it's titled!
 14 - MonteCarloCircle
 15 - LargeBlockRandomElement
 16 - LeastRecentLog (double linked list)
+22 - WordReconstruction
