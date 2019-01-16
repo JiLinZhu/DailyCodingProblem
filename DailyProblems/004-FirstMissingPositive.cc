@@ -14,16 +14,16 @@ int firstMissingPositive( vector<int> v  ) {
 
 		val = v[i];
 
-		while( v[val-1] != val ) {
+		while( v[val-1] != val ) { // swap wrong vals into correct place 
 			nextVal = v[val-1];
 			v[val-1] = val;
 			val = nextVal;
-			if( val <= 0 || val > n ) break;
+			if( val <= 0 || val > n ) break; // non existent
 		}
 	}
 
-	for(int i = 0; i < n; i++){
-		if( v[i] != i + 1 ) return i + 1;
+	for(int i = 0; i < n; i++) {		
+		if( v[i] != i + 1 ) return i + 1; // return first value that is missing
 	} 
 
 	return v.size() + 1;

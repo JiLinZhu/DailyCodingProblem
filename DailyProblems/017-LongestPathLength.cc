@@ -33,11 +33,11 @@ int lengthLongestPath(string input) {
     for( char i: input ) {
         if ( i == '\n' ) {
             if( sumSoFar.size() == layer ) {
-                sumSoFar.push_back(  count + 1 + sumSoFar[layer-1] );
+                sumSoFar.push_back( count + 1 + sumSoFar[layer-1] );
             } else {
                 sumSoFar[layer] = count + 1 + sumSoFar[layer-1];
             }
-            if( isFile ) maxLen = max( maxLen, sumSoFar[layer] );
+            if( isFile ) maxLen = max( maxLen, sumSoFar[layer] ); // checks if cur layer is > max
             
             isFile = false;
             count = 0;

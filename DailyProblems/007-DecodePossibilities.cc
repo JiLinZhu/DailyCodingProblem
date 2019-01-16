@@ -6,7 +6,7 @@ int decode( string message, unordered_map<int, char> map ) {
 	int prev = 1;
 	int tot = 1;
 	int temp;
-	for( int i = 1; i < message.length(); i++ ) {
+	for( int i = 1; i < message.length(); i++ ) { // DP
 		temp = tot;
 		if( stoi(message[i-1])*10 + stoi(message[i]) < 27 ) {
 			tot += prev;
