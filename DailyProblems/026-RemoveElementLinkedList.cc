@@ -8,9 +8,19 @@ Do this in constant space and in one pass.
 
 void removeKthElement( Node* root, int k ) {
 	Node* lead = root;
-	for( int i = 0; i <= k; i++ ) {
+	for( int i = 0; i < k; i++ ) {
 		lead = lead->next;
 	}
+
+	if( lead == NULL ) {
+        temp = head;
+        head = head->next;
+        delete temp;
+        return head;
+    }
+    
+    lead = lead->next;
+        
 
 	while( lead != nullptr ) {
 		lead = lead->next;
