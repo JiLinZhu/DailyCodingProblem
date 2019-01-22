@@ -1,6 +1,7 @@
 /* 4. Stripe
 Given an array of integers, find the first missing positive integer in linear time and constant space. 
 */
+
 void swap( vector<int>& v, int i, int j ) {
     int temp = v[j];
     v[j] = v[i];

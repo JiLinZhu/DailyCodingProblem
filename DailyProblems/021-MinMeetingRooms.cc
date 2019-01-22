@@ -1,6 +1,7 @@
 /* 21. Snapchat
 Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
 */
+
 int minMeetingRooms(vector<Interval> &intervals) { //With Array
     vector<int> start;
     vector<int> end;

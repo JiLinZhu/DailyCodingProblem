@@ -2,6 +2,7 @@
 Given a list of integers, write a function that returns the largest sum of non-adjacent numbers. 
 Assume vector is of size 2+. Can you do this in O(N) time and constant space? 
 */
+
 int largestSum( vector<int> v ) { // DP
 	int a = 0;
 	int b = 0;
