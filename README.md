@@ -10,3 +10,7 @@ Exactly what it's titled!
 16 - LeastRecentLog (double linked list)
 22 - WordReconstruction
 31 - Edit Distance (?????)
+34 - CreatePalindrome
+37 - PowerSet
+39 - GameOfLife 
+42 - SubsetSum (sorting solution is obvious, dp possibly better?)
