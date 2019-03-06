@@ -14,3 +14,6 @@ Exactly what it's titled!
 37 - PowerSet
 39 - GameOfLife 
 42 - SubsetSum (sorting solution is obvious, dp possibly better?)
+
+
+48,52
