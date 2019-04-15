@@ -4,12 +4,14 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120
 Follow-up: what if you can't use division?
 */
 
-vector<int> productArray( vector<int> v ) {	
+// Left Prod / Right Prod
+
+vector<int> productArray( vector<int> v ) {
 	vector<int> left;
 	vector<int> right;
 	int leftProd = 1;
 	int rightProd = 1;
-	
+
 	for( int i = 0; i < v.length(); i++ ) { // Get product of left and right side
 		leftProd *= v[i];
 		rightProd *= v[v.length()-1-i];
@@ -23,6 +25,6 @@ vector<int> productArray( vector<int> v ) {
 		result.push_back( left[i-1] * right[i+1] );
 	}
 	result.push_back( left[v.length()-2] );
-	
+
 	return result;
 }

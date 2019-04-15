@@ -3,6 +3,8 @@ Given a list of numbers and a number k, return whether any two numbers from the 
 Bonus: Can you do this in one pass?
 */
 
+// Simple hashset
+
 bool twoSum( vector<int> a, int k ) {
 	unordered_set<int> set;
 	for( int i : a ) {
@@ -11,3 +13,4 @@ bool twoSum( vector<int> a, int k ) {
 	}
 	return false;
 }
+

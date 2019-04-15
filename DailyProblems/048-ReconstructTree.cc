@@ -19,29 +19,28 @@ d  e f  g
 
 */
 
-keep going right until seen
-set
-
-Node* reconstructTree( vector<char> preOrder, vector<char> inOrder, int a, int b) {
-	Node* root = new Node(preOrder[a++]);
-	stack<Node*> s;
-	s.push(root);
-	bool isLeft = preOrder[a] != inOrder[b];
-
-	while(  ) {
-		Node* cur = s.top();
-		Node* newNode = new Node(preOrder[a]);
-
-		if( isLeft ) {
-			cur->left = newNode;
-		} else {
-			cur->right = newNode;		
-		}
-
-		s.push(newNode);
-		isLeft = inOrder[b] != preOrder[a];
-
-
-	}
-}
+class Solution {
+public:
+    TreeNode* rebuild(vector<int> preorder, int a, int lower, int higher ) {
+        if( lower == higher ) return nullptr;
+        
+        
+        TreeNode* root = new TreeNode(preorder[a]);
+        
+        int inOrderIndex = map[preorder[a]];
+        root->left = rebuild(preorder, a+1, lower, inOrderIndex);
+       
+        root->right = rebuild(preorder, a+inOrderIndex-lower+1, inOrderIndex+1, higher);
+        return root;
+    }
+    
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+        int size = inorder.size();
+        for( int i = 0; i < size; i++ )  map[inorder[i]] = i;
+        
+        return rebuild(preorder, 0, 0, size);
+    }
+private:
+    unordered_map<int,int> map;
+};
 

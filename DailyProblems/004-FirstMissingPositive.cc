@@ -1,6 +1,10 @@
 /* 4. Stripe
-Given an array of integers, find the first missing positive integer in linear time and constant space. 
+Given an array of integers, find the first missing positive integer in linear time and constant space.
 */
+
+
+// Swap while value cur value != cur index and index within index of array
+// Then iterate and find first value that is not equal to index
 
 void swap( vector<int>& v, int i, int j ) {
     int temp = v[j];
@@ -15,7 +19,7 @@ int firstMissingPositive( vector<int> v  ) {
 
 		val = v[i];
 
-		while( v[val-1] != val ) { // swap wrong vals into correct place 
+		while( v[val-1] != val ) { // swap wrong vals into correct place
 			nextVal = v[val-1];
 			v[val-1] = val;
 			val = nextVal;
@@ -23,9 +27,9 @@ int firstMissingPositive( vector<int> v  ) {
 		}
 	}
 
-	for(int i = 0; i < n; i++) {		
+	for(int i = 0; i < n; i++) {
 		if( v[i] != i + 1 ) return i + 1; // return first value that is missing
-	} 
+	}
 
 	return v.size() + 1;
 }
