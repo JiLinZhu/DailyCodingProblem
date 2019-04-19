@@ -1,0 +1,3 @@
+/*
+Return all the subsets of a set.
+*/
