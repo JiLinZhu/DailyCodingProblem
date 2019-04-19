@@ -1,23 +1,22 @@
 # DailyCodingProblem
 
 # Uncomplete Questions for DailyProblems
-5 - ConstructPair
-10 - JobScheduler
-11 - Autocomplete (use a trie)
-14 - MonteCarloCircle
-15 - LargeBlockRandomElement
-22 - WordReconstruction
-31 - Edit Distance (?????)
-34 - CreatePalindrome
-37 - PowerSet
-39 - GameOfLife
-42 - SubsetSum (sorting solution is obvious, dp possibly better?)
-55 - URLShortener
-56 - VertexColouring
-59 - FileSync
-64 - KnightsTour
-
-67
-72
-87
-88
+5 - ConstructPair<br/>
+10 - JobScheduler<br/>
+11 - Autocomplete<br/>
+14 - MonteCarloCircle<br/>
+15 - LargeBlockRandomElement<br/>
+22 - WordReconstruction<br/>
+31 - Edit Distance<br/>
+34 - CreatePalindrome<br/>
+37 - PowerSet<br/>
+39 - GameOfLife<br/>
+42 - SubsetSum (sorting solution is obvious, dp possibly better?)<br/>
+55 - URLShortener<br/>
+56 - VertexColouring<br/>
+59 - FileSync<br/>
+64 - KnightsTour<br/>
+67<br/>
+72<br/>
+87<br/>
+88<br/>
