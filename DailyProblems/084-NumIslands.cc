@@ -71,10 +71,10 @@ class UnionFind {
   }
 
   int find(int i) {
-    while( i != parent[i] ) {
-      parent[i] = find(parent[i]); // The extra step here is path compression
+    if( i != parent[i] ) {
+      parent[i] = find(parent[i]);
     }
-    return i;
+    return parent[i];
   }
 
   void Union(int x, int y) {

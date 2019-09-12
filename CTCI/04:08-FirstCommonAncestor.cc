@@ -17,6 +17,6 @@ Node* firstCommonAncestor( Node* cur, Node* a, Node* b ) {
   } else if ( right != NULL ) {
     return right;
   } else {
-    return NULL;å
+    return NULL;
   }
 }
